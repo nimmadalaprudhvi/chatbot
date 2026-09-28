@@ -1,0 +1,5 @@
+backend/target/
+data/*.jsonl
+.idea/
+*.iml
+.DS_Store

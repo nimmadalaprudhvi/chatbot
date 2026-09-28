@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoke.AI — Health Insurance Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="chat-page">
+        <section class="chat-shell" aria-label="Invoke.AI health insurance assistant">
+            <header class="chat-header" id="chatHeader">
+                <div class="brand">
+        <span class="brand-mark">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+
+                    <div class="brand-copy">
+                        <strong>Invoke.AI</strong>
+                        <span>Health Insurance Assistant</span>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+        <span class="status-indicator">
+            <span class="status-dot"></span>
+            Online
+        </span>
+
+                    <button
+                            type="button"
+                            class="header-btn"
+                            id="menuButton"
+                            aria-label="Open menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <div id="menuPanel" class="menu-panel hidden">
+                <div class="menu-heading">Assistant</div>
+                <button id="resetBtn" class="menu-item" type="button">
+                    <span class="menu-icon">↻</span>
+                    <span>
+                        <strong>Start again</strong>
+                        <small>Begin a new application session</small>
+                    </span>
+                </button>
+            </div>
+
+            <section id="homeView" class="home-view">
+                <div class="intro">
+                    <div class="intro-icon" aria-hidden="true">♥</div>
+                    <div>
+                        <span class="eyebrow">HEALTH INSURANCE</span>
+                        <h1>How can I help you today?</h1>
+                        <p>
+                            I’m your Health Insurance Assistant. I can guide you through
+                            your application or answer questions about health insurance.
+                        </p>
+                    </div>
+                </div>
+
+                <button id="startApplicationBtn" class="main-card" type="button">
+                    <span class="main-card-icon">♥</span>
+                    <span class="card-content">
+                        <strong>Start application</strong>
+                        <small>Complete your health insurance application</small>
+                    </span>
+                    <span class="card-arrow">›</span>
+                </button>
+
+                <div class="divider">
+                    <span></span>
+                    <em>or</em>
+                    <span></span>
+                </div>
+
+                <button id="askQuestionBtn" class="option-card" type="button">
+                    <span class="option-icon">?</span>
+                    <span class="card-content">
+                        <strong>Ask a question about insurance</strong>
+                        <small>Get help without starting the application</small>
+                    </span>
+                    <span class="card-arrow">›</span>
+                </button>
+            </section>
+
+            <section id="chatView" class="chat-view hidden" aria-live="polite">
+                <div id="messages" class="messages"></div>
+
+                <div id="questionControls" class="question-controls"></div>
+            </section>
+
+            <form id="chatForm" class="chat-footer">
+                <input
+                    id="input"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Ask about health insurance..."
+                    aria-label="Message"
+                >
+                <button id="sendButton" class="send-btn" type="submit" aria-label="Send message">
+                    <span>↑</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

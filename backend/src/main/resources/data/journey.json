@@ -1,0 +1,94 @@
+[
+  {
+    "id": "applicant_name",
+    "section": "Personal details",
+    "question": "Before we get started, may I have your name?",
+    "type": "name",
+    "options": []
+  },
+  {
+    "id": "dob",
+    "section": "Personal details",
+    "question": "What is your date of birth?",
+    "type": "dob",
+    "options": []
+  },
+  {
+    "id": "residency",
+    "section": "Personal details",
+    "question": "Which country do you currently reside in?",
+    "type": "residency",
+    "options": []
+  },
+  {
+    "id": "medical_history",
+    "section": "Medical history",
+    "question": "Have you ever been diagnosed with a medical condition?",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No",
+      "I’m not sure"
+    ]
+  },
+  {
+    "id": "medication",
+    "section": "Medical history",
+    "question": "Are you currently taking any prescribed medication?",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "surgery",
+    "section": "Medical history",
+    "question": "Have you ever had surgery or a medical procedure?",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "mental_health",
+    "section": "Medical history",
+    "question": "Have you received treatment or support for a mental health condition?",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No",
+      "Prefer to discuss with my broker"
+    ]
+  },
+  {
+    "id": "lifestyle",
+    "section": "Lifestyle",
+    "question": "Do you currently smoke or use tobacco products?",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "review",
+    "section": "Review",
+    "question": "Your application is ready for review. Would you like to review your answers?",
+    "type": "choice",
+    "options": [
+      "Review application",
+      "Submit application"
+    ]
+  },
+  {
+    "id": "submit",
+    "section": "Complete",
+    "question": "Your application has been prepared. You can now continue with the insurer or broker submission process.",
+    "type": "terminal",
+    "options": [
+      "Start again"
+    ]
+  }
+]
